@@ -1,0 +1,326 @@
+{
+  "meta": {
+    "repoName": "task-flow-app",
+    "analyzedAt": "2026-05-03T21:00:00.000Z",
+    "primaryLanguage": "TypeScript",
+    "totalFiles": 127,
+    "loc": 8543,
+    "orientVersion": "0.1.0"
+  },
+  "stack": {
+    "runtime": ["node@20.11.0"],
+    "packageManager": "pnpm",
+    "frameworks": ["Next.js", "React"],
+    "databases": ["Prisma", "PostgreSQL"],
+    "testing": ["Jest", "Playwright"],
+    "ciCd": ["GitHub Actions"]
+  },
+  "architecture": {
+    "mermaid": "graph TD\n  Root[task-flow-app]\n  Root --> App[app/]\n  App --> AppApi[api/]\n  App --> AppTasks[tasks/]\n  App --> AppAuth[auth/]\n  Root --> Components[components/]\n  Components --> ComponentsUi[ui/]\n  Components --> ComponentsForms[forms/]\n  Root --> Lib[lib/]\n  Lib --> LibDb[db.ts]\n  Lib --> LibAuth[auth.ts]\n  Lib --> LibUtils[utils.ts]\n  Root --> Prisma[prisma/]\n  Prisma --> PrismaSchema[schema.prisma]\n  Root --> Tests[__tests__/]\n  Root --> Public[public/]\n  Root --> Config[config files]",
+    "summary": "TypeScript project with Next.js, React. Full-stack task management application with Prisma ORM and PostgreSQL database.",
+    "entryPoints": [
+      {
+        "path": "app/page.tsx",
+        "kind": "main"
+      },
+      {
+        "path": "app/api/tasks/route.ts",
+        "kind": "api"
+      }
+    ]
+  },
+  "startHere": [
+    {
+      "path": "app/page.tsx",
+      "why": "Main application entry point - landing page",
+      "order": 1
+    },
+    {
+      "path": "README.md",
+      "why": "Comprehensive documentation with setup instructions",
+      "order": 2
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "why": "Database schema definitions - core data models",
+      "order": 3
+    },
+    {
+      "path": "lib/db.ts",
+      "why": "Database connection and Prisma client setup",
+      "order": 4
+    },
+    {
+      "path": "app/api/tasks/route.ts",
+      "why": "Main API route handler for task operations",
+      "order": 5
+    },
+    {
+      "path": "components/ui/",
+      "why": "Reusable UI component library",
+      "order": 6
+    },
+    {
+      "path": "lib/auth.ts",
+      "why": "Authentication utilities and session management",
+      "order": 7
+    }
+  ],
+  "hotFiles": [
+    {
+      "path": "app/api/tasks/route.ts",
+      "commits": 87,
+      "uniqueAuthors": 4,
+      "score": 8.94,
+      "reason": "Most actively maintained API endpoint"
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "commits": 64,
+      "uniqueAuthors": 3,
+      "score": 7.28,
+      "reason": "Frequent schema updates"
+    },
+    {
+      "path": "components/task-list.tsx",
+      "commits": 52,
+      "uniqueAuthors": 3,
+      "score": 6.68,
+      "reason": "Core UI component with many iterations"
+    },
+    {
+      "path": "lib/db.ts",
+      "commits": 41,
+      "uniqueAuthors": 2,
+      "score": 5.29,
+      "reason": "Database connection refinements"
+    },
+    {
+      "path": "app/tasks/[id]/page.tsx",
+      "commits": 38,
+      "uniqueAuthors": 3,
+      "score": 6.37,
+      "reason": "Task detail page with frequent updates"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "commits": 35,
+      "uniqueAuthors": 2,
+      "score": 5.06,
+      "reason": "Shared button component"
+    },
+    {
+      "path": "lib/auth.ts",
+      "commits": 31,
+      "uniqueAuthors": 2,
+      "score": 4.77,
+      "reason": "Authentication logic updates"
+    },
+    {
+      "path": "app/layout.tsx",
+      "commits": 28,
+      "uniqueAuthors": 3,
+      "score": 5.68,
+      "reason": "Root layout modifications"
+    },
+    {
+      "path": "components/task-form.tsx",
+      "commits": 26,
+      "uniqueAuthors": 2,
+      "score": 4.53,
+      "reason": "Task creation/edit form"
+    },
+    {
+      "path": "lib/utils.ts",
+      "commits": 24,
+      "uniqueAuthors": 3,
+      "score": 5.43,
+      "reason": "Utility functions"
+    },
+    {
+      "path": "app/api/auth/[...nextauth]/route.ts",
+      "commits": 22,
+      "uniqueAuthors": 2,
+      "score": 4.31,
+      "reason": "NextAuth configuration"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "commits": 19,
+      "uniqueAuthors": 2,
+      "score": 3.99,
+      "reason": "Input component refinements"
+    },
+    {
+      "path": "app/tasks/page.tsx",
+      "commits": 18,
+      "uniqueAuthors": 2,
+      "score": 3.89,
+      "reason": "Tasks list page"
+    },
+    {
+      "path": "middleware.ts",
+      "commits": 16,
+      "uniqueAuthors": 2,
+      "score": 3.68,
+      "reason": "Auth middleware"
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "commits": 14,
+      "uniqueAuthors": 1,
+      "score": 2.64,
+      "reason": "Dialog component"
+    },
+    {
+      "path": "app/api/users/route.ts",
+      "commits": 13,
+      "uniqueAuthors": 2,
+      "score": 3.52,
+      "reason": "User management API"
+    },
+    {
+      "path": "lib/validations.ts",
+      "commits": 12,
+      "uniqueAuthors": 2,
+      "score": 3.42,
+      "reason": "Zod validation schemas"
+    },
+    {
+      "path": "components/header.tsx",
+      "commits": 11,
+      "uniqueAuthors": 2,
+      "score": 3.32,
+      "reason": "App header component"
+    },
+    {
+      "path": "app/globals.css",
+      "commits": 10,
+      "uniqueAuthors": 2,
+      "score": 3.22,
+      "reason": "Global styles"
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "commits": 9,
+      "uniqueAuthors": 1,
+      "score": 2.30,
+      "reason": "Card component"
+    },
+    {
+      "path": "app/api/tasks/[id]/route.ts",
+      "commits": 8,
+      "uniqueAuthors": 2,
+      "score": 3.12,
+      "reason": "Individual task API"
+    },
+    {
+      "path": "components/sidebar.tsx",
+      "commits": 7,
+      "uniqueAuthors": 1,
+      "score": 2.08,
+      "reason": "Navigation sidebar"
+    },
+    {
+      "path": "lib/hooks/use-tasks.ts",
+      "commits": 6,
+      "uniqueAuthors": 1,
+      "score": 1.95,
+      "reason": "Custom React hook"
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "commits": 5,
+      "uniqueAuthors": 1,
+      "score": 1.79,
+      "reason": "Badge component"
+    },
+    {
+      "path": "app/auth/signin/page.tsx",
+      "commits": 5,
+      "uniqueAuthors": 1,
+      "score": 1.79,
+      "reason": "Sign-in page"
+    },
+    {
+      "path": "components/task-filters.tsx",
+      "commits": 4,
+      "uniqueAuthors": 1,
+      "score": 1.61,
+      "reason": "Filter controls"
+    },
+    {
+      "path": "lib/constants.ts",
+      "commits": 3,
+      "uniqueAuthors": 1,
+      "score": 1.39,
+      "reason": "App constants"
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "commits": 3,
+      "uniqueAuthors": 1,
+      "score": 1.39,
+      "reason": "Select component"
+    },
+    {
+      "path": "app/api/health/route.ts",
+      "commits": 2,
+      "uniqueAuthors": 1,
+      "score": 1.10,
+      "reason": "Health check endpoint"
+    },
+    {
+      "path": "next.config.ts",
+      "commits": 2,
+      "uniqueAuthors": 1,
+      "score": 1.10,
+      "reason": "Next.js configuration"
+    }
+  ],
+  "onboardingChecklist": {
+    "frontend": [
+      "Explore app/ directory structure (App Router)",
+      "Review page.tsx files for routing",
+      "Check components/ for reusable UI",
+      "Understand the component hierarchy in components/ui/",
+      "Review Tailwind configuration and custom styles"
+    ],
+    "backend": [
+      "Review Prisma schema in prisma/schema.prisma",
+      "Understand database models and relationships",
+      "Check API routes in app/api/",
+      "Review authentication setup with NextAuth",
+      "Understand middleware.ts for route protection"
+    ],
+    "fullstack": [
+      "Install dependencies: pnpm install",
+      "Set up environment variables (copy .env.example to .env)",
+      "Run database migrations: pnpm prisma migrate dev",
+      "Seed the database: pnpm prisma db seed",
+      "Start development server: pnpm dev",
+      "Understand API routes in app/api/",
+      "Review server vs client components",
+      "Run test suite: pnpm test",
+      "Review test coverage with pnpm test:coverage",
+      "Check package.json scripts for available commands"
+    ]
+  },
+  "risks": [
+    {
+      "severity": "med",
+      "description": "Large dependency tree",
+      "evidence": "67 dependencies may increase maintenance burden and bundle size"
+    },
+    {
+      "severity": "low",
+      "description": "Database migration strategy",
+      "evidence": "Ensure proper migration rollback procedures are documented"
+    },
+    {
+      "severity": "low",
+      "description": "Environment variable management",
+      "evidence": "Multiple environment-specific configs - ensure .env.example is up to date"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "repoName": "hyper",
+    "analyzedAt": "2026-05-17T18:31:15.197Z",
+    "primaryLanguage": "TypeScript",
+    "totalFiles": 115,
+    "loc": 138498,
+    "orientVersion": "0.1.0"
+  },
+  "stack": {
+    "runtime": [
+      "node@22.15.0"
+    ],
+    "packageManager": "yarn",
+    "frameworks": [
+      "Electron",
+      "React (renderer)"
+    ],
+    "databases": [],
+    "testing": [
+      "AVA",
+      "Playwright"
+    ],
+    "ciCd": [
+      "GitHub Actions"
+    ]
+  },
+  "architecture": {
+    "mermaid": "graph TD\n  Root[\"hyper\"]\n  D0[\"app/\"]\n  D0_0[\"utils/\"]\n  D1[\"assets/\"]\n  D2[\"bin/\"]\n  D3[\"cli/\"]\n  D4[\"lib/\"]\n  D4_0[\"components/\"]\n  D4_1[\"reducers/\"]\n  D4_2[\"store/\"]\n  D4_3[\"utils/\"]\n  D5[\"test/\"]\n  D6[\"typings/\"]\n  Config[\"config files\"]\n  Root --> D0\n  D0 --> D0_0\n  Root --> D1\n  Root --> D2\n  Root --> D3\n  Root --> D4\n  D4 --> D4_0\n  D4 --> D4_1\n  D4 --> D4_2\n  D4 --> D4_3\n  Root --> D5\n  Root --> D6\n  Root --> Config",
+    "summary": "TypeScript project with Electron, React (renderer)",
+    "entryPoints": []
+  },
+  "startHere": [
+    {
+      "path": "README.md",
+      "why": "Comprehensive documentation",
+      "order": 1
+    },
+    {
+      "path": "tsconfig.json",
+      "why": "Core configuration",
+      "order": 2
+    },
+    {
+      "path": "lib/components/term.tsx",
+      "why": "Most actively maintained file",
+      "order": 3
+    },
+    {
+      "path": "test/",
+      "why": "Test suite entry",
+      "order": 4
+    },
+    {
+      "path": "lib/",
+      "why": "Core utilities and helpers",
+      "order": 5
+    }
+  ],
+  "hotFiles": [
+    {
+      "path": "lib/components/term.tsx",
+      "commits": 27,
+      "uniqueAuthors": 54,
+      "score": 24.48660230559002
+    },
+    {
+      "path": "app/index.ts",
+      "commits": 18,
+      "uniqueAuthors": 46,
+      "score": 19.970156771883303
+    },
+    {
+      "path": "lib/reducers/ui.ts",
+      "commits": 16,
+      "uniqueAuthors": 29,
+      "score": 15.257320791515395
+    },
+    {
+      "path": "app/plugins.ts",
+      "commits": 16,
+      "uniqueAuthors": 29,
+      "score": 15.257320791515395
+    },
+    {
+      "path": "lib/actions/ui.ts",
+      "commits": 13,
+      "uniqueAuthors": 29,
+      "score": 14.211758655454451
+    },
+    {
+      "path": "app/session.ts",
+      "commits": 14,
+      "uniqueAuthors": 23,
+      "score": 12.987352521159327
+    },
+    {
+      "path": "lib/index.tsx",
+      "commits": 11,
+      "uniqueAuthors": 27,
+      "score": 12.911953708495739
+    },
+    {
+      "path": "lib/utils/plugins.ts",
+      "commits": 15,
+      "uniqueAuthors": 21,
+      "score": 12.705597690644689
+    },
+    {
+      "path": "app/ui/window.ts",
+      "commits": 22,
+      "uniqueAuthors": 16,
+      "score": 12.541976863716599
+    },
+    {
+      "path": "lib/components/terms.tsx",
+      "commits": 9,
+      "uniqueAuthors": 26,
+      "score": 11.740926320884496
+    },
+    {
+      "path": "lib/containers/hyper.tsx",
+      "commits": 13,
+      "uniqueAuthors": 19,
+      "score": 11.503384206003222
+    },
+    {
+      "path": "lib/containers/terms.ts",
+      "commits": 9,
+      "uniqueAuthors": 24,
+      "score": 11.28031713434873
+    },
+    {
+      "path": "lib/components/term-group.tsx",
+      "commits": 8,
+      "uniqueAuthors": 25,
+      "score": 10.986122886681098
+    },
+    {
+      "path": "webpack.config.ts",
+      "commits": 14,
+      "uniqueAuthors": 14,
+      "score": 10.132596038708742
+    },
+    {
+      "path": "lib/actions/sessions.ts",
+      "commits": 9,
+      "uniqueAuthors": 17,
+      "score": 9.493801550387115
+    },
+    {
+      "path": "app/updater.ts",
+      "commits": 11,
+      "uniqueAuthors": 13,
+      "score": 8.959458340552073
+    },
+    {
+      "path": "app/config.ts",
+      "commits": 9,
+      "uniqueAuthors": 14,
+      "score": 8.615484521876734
+    },
+    {
+      "path": "lib/reducers/sessions.ts",
+      "commits": 9,
+      "uniqueAuthors": 13,
+      "score": 8.30208861890905
+    },
+    {
+      "path": "lib/components/header.tsx",
+      "commits": 5,
+      "uniqueAuthors": 20,
+      "score": 8.012991945045748
+    },
+    {
+      "path": "app/config/init.ts",
+      "commits": 12,
+      "uniqueAuthors": 9,
+      "score": 7.694848072384611
+    },
+    {
+      "path": "cli/index.ts",
+      "commits": 11,
+      "uniqueAuthors": 9,
+      "score": 7.4547199493640015
+    },
+    {
+      "path": "lib/components/tab.tsx",
+      "commits": 6,
+      "uniqueAuthors": 12,
+      "score": 6.740830490255459
+    },
+    {
+      "path": "app/commands.ts",
+      "commits": 8,
+      "uniqueAuthors": 9,
+      "score": 6.591673732008658
+    },
+    {
+      "path": "lib/components/notification.tsx",
+      "commits": 7,
+      "uniqueAuthors": 10,
+      "score": 6.575771532880239
+    },
+    {
+      "path": "lib/components/split-pane.tsx",
+      "commits": 8,
+      "uniqueAuthors": 8,
+      "score": 6.214689593696747
+    },
+    {
+      "path": "app/rpc.ts",
+      "commits": 8,
+      "uniqueAuthors": 8,
+      "score": 6.214689593696747
+    },
+    {
+      "path": "lib/components/tabs.tsx",
+      "commits": 6,
+      "uniqueAuthors": 10,
+      "score": 6.153508193052539
+    },
+    {
+      "path": "lib/actions/term-groups.ts",
+      "commits": 11,
+      "uniqueAuthors": 6,
+      "score": 6.086753350429417
+    },
+    {
+      "path": "app/menus/menu.ts",
+      "commits": 7,
+      "uniqueAuthors": 8,
+      "score": 5.881548860811283
+    },
+    {
+      "path": "lib/components/notifications.tsx",
+      "commits": 7,
+      "uniqueAuthors": 8,
+      "score": 5.881548860811283
+    }
+  ],
+  "onboardingChecklist": {
+    "frontend": [
+      "Locate the renderer entry (typically lib/index.tsx or app/index.tsx)",
+      "Identify the root React component and its state shape",
+      "Map IPC channels used from renderer (ipcRenderer.send/invoke)",
+      "Review styling approach (CSS modules, styled-components, Tailwind)"
+    ],
+    "backend": [
+      "Locate the main process entry (typically app/index.ts or main.ts)",
+      "Review BrowserWindow creation and lifecycle",
+      "Map IPC channels exposed via ipcMain.on/handle",
+      "Identify preload script(s) and contextBridge usage",
+      "Review electron-builder / electron-forge config"
+    ],
+    "fullstack": [
+      "Install dependencies: npm install",
+      "Review environment variables (.env.example)",
+      "Check package.json scripts",
+      "Run test suite: npm test",
+      "Review test coverage and CI integration"
+    ]
+  },
+  "risks": [
+    {
+      "severity": "med",
+      "description": "Large dependency tree",
+      "evidence": "106 dependencies may increase maintenance burden"
+    }
+  ]
+}
