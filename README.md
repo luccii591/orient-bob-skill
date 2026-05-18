@@ -24,6 +24,8 @@
   <img src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Tailwind-v4-38B2AC?logo=tailwindcss" alt="Tailwind" />
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
+  <a href="https://orient-bob-skill.vercel.app"><img src="https://img.shields.io/badge/demo-live-blue?logo=vercel" alt="Live Demo" /></a>
+  </p>
 </p>
 
 ---
@@ -71,7 +73,7 @@ El flujo completo toma menos de un minuto: ejecutar el script sobre un repo desc
 
 Los screenshots se generaron ejecutando `orient.js` contra [vercel/hyper](https://github.com/vercel/hyper) (terminal Electron con React renderer), un repo OSS real con ~140K líneas de código.
 
-> **Live demo**: [orient-bob-skill.vercel.app](https://orient-bob-skill.vercel.app) _(actualizar cuando el deploy esté listo)_
+> 🌐 **Live demo**: [orient-bob-skill.vercel.app](https://orient-bob-skill.vercel.app)
 
 ---
 
